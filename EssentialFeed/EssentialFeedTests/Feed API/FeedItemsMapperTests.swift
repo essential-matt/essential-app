@@ -1,7 +1,8 @@
 import XCTest
 import EssentialFeed
 
-class LoadFeedFromRemoteUseCaseTests: XCTestCase {
+class FeedItemsMapperTests: XCTestCase {
+
     func test_map_throwsErrorOnNon200HTTPResponse() throws {
         let json = makeItemsJSON([])
         let samples = [199, 201, 300, 400, 500]
@@ -23,20 +24,22 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
 
     func test_map_deliversNoItemsOn200HTTPResponseWithEmptyJSONList() throws {
         let emptyListJSON = makeItemsJSON([])
+
         let result = try FeedItemsMapper.map(emptyListJSON, from: HTTPURLResponse(statusCode: 200))
 
         XCTAssertEqual(result, [])
     }
 
     func test_map_deliversItemsOn200HTTPResponseWithJSONItems() throws {
-        let item1 = makeItem(id: UUID(),
-                             imageURL: URL(string: "http://a-url.com")!)
+        let item1 = makeItem(
+            id: UUID(),
+            imageURL: URL(string: "http://a-url.com")!)
 
-
-        let item2 = makeItem(id: UUID(),
-                             description: "a description",
-                             location: "a location",
-                             imageURL: URL(string: "http://another-url.com")!)
+        let item2 = makeItem(
+            id: UUID(),
+            description: "a description",
+            location: "a location",
+            imageURL: URL(string: "http://another-url.com")!)
 
         let json = makeItemsJSON([item1.json, item2.json])
 
@@ -45,16 +48,14 @@ class LoadFeedFromRemoteUseCaseTests: XCTestCase {
         XCTAssertEqual(result, [item1.model, item2.model])
     }
 
-    // MARK: helpers
+    // MARK: - Helpers
+
     private func failure(_ error: RemoteFeedLoader.Error) -> RemoteFeedLoader.Result {
         return .failure(error)
     }
 
     private func makeItem(id: UUID, description: String? = nil, location: String? = nil, imageURL: URL) -> (model: FeedImage, json: [String: Any]) {
-        let item = FeedImage(id: id,
-                             description: description,
-                             location: location,
-                             url: imageURL)
+        let item = FeedImage(id: id, description: description, location: location, url: imageURL)
 
         let json = [
             "id": id.uuidString,
