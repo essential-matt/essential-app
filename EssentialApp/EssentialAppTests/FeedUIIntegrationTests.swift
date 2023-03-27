@@ -92,7 +92,7 @@ final class FeedUIIntegrationTests: XCTestCase {
         XCTAssertEqual(sut.errorMessage, nil)
 
         loader.completeFeedLoadingWithError(at: 0)
-        XCTAssertEqual(sut.errorMessage, XCTAssertEqual(sut.errorMessage, loadError))
+        XCTAssertEqual(sut.errorMessage, loadError)
 
         sut.simulateUserInitiatedFeedReload()
         XCTAssertEqual(sut.errorMessage, nil)
