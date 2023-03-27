@@ -103,6 +103,7 @@
 		33D42EC129D2298700F62021 /* ImageCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D42EC029D2298700F62021 /* ImageCommentCell.swift */; };
 		33D42EC329D229AC00F62021 /* ImageComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D42EC229D229AC00F62021 /* ImageComments.storyboard */; };
 		33D42EC629D22A3000F62021 /* ImageCommentsSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D42EC529D22A3000F62021 /* ImageCommentsSnapshotTests.swift */; };
+		33D42EC829D22D8600F62021 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D42EC729D22D8600F62021 /* CellController.swift */; };
 		33D6D38727F569AA002DBDC1 /* CodableFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D6D38627F569AA002DBDC1 /* CodableFeedStore.swift */; };
 		33D9AFCD27C8AB360003C1CB /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9AFCC27C8AB360003C1CB /* URLSessionHTTPClientTests.swift */; };
 		33E13747289108A20057B6EE /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E13746289108A20057B6EE /* UIRefreshControl+Helpers.swift */; };
@@ -264,6 +265,7 @@
 		33D42EC029D2298700F62021 /* ImageCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentCell.swift; sourceTree = "<group>"; };
 		33D42EC229D229AC00F62021 /* ImageComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageComments.storyboard; sourceTree = "<group>"; };
 		33D42EC529D22A3000F62021 /* ImageCommentsSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsSnapshotTests.swift; sourceTree = "<group>"; };
+		33D42EC729D22D8600F62021 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		33D6D38627F569AA002DBDC1 /* CodableFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStore.swift; sourceTree = "<group>"; };
 		33D9AFCC27C8AB360003C1CB /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		33E13746289108A20057B6EE /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
@@ -472,6 +474,7 @@
 			children = (
 				33889FFA283CC81E0024EF30 /* ListViewController.swift */,
 				33A55CFB2849C9D700700173 /* FeedImageCellController.swift */,
+				33D42EC729D22D8600F62021 /* CellController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1062,6 +1065,7 @@
 				337B6A4029146E5100EB8455 /* UITableView+HeaderSizing.swift in Sources */,
 				33AC30E028908A3A0074280C /* ErrorView.swift in Sources */,
 				33CCA4C52844819100587ADD /* UIView+Shimmering.swift in Sources */,
+				33D42EC829D22D8600F62021 /* CellController.swift in Sources */,
 				33A6B4E72876A4FF00AA2411 /* UITableView+Dequeueing.swift in Sources */,
 				33E13747289108A20057B6EE /* UIRefreshControl+Helpers.swift in Sources */,
 				33A6B4E92876A69C00AA2411 /* UIImageView+Animations.swift in Sources */,
