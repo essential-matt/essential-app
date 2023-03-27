@@ -2,6 +2,12 @@ import EssentialFeediOS
 import UIKit
 
 extension ListViewController {
+    public override func loadViewIfNeeded() {
+        super.loadViewIfNeeded()
+
+        tableView.frame = CGRect(x: 0, y: 0, width: 1, height: 1)
+    }
+
     func simulateUserInitiatedFeedReload() {
         refreshControl?.simulatePullToRefresh()
     }
@@ -16,14 +22,14 @@ extension ListViewController {
         let view = simulateFeedImageViewVisible(at: row)
         
         let delegate = tableView.delegate
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         delegate?.tableView?(tableView, didEndDisplaying: view!, forRowAt: index)
         return view
     }
     
     func simulateFeedImageViewNearVisible(at row: Int) {
         let ds = tableView.prefetchDataSource
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         ds?.tableView(tableView, prefetchRowsAt: [index])
     }
     
@@ -31,7 +37,7 @@ extension ListViewController {
         simulateFeedImageViewVisible(at: row)
         
         let ds = tableView.prefetchDataSource
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         ds?.tableView?(tableView, cancelPrefetchingForRowsAt: [index])
     }
 
@@ -52,10 +58,10 @@ extension ListViewController {
     }
     
     var numberOfRenderedFeedImageViews: Int {
-        tableView.numberOfRows(inSection: feedImageSection)
+        tableView.numberOfSections == 0 ? 0 :  tableView.numberOfRows(inSection: feedImagesSection)
     }
     
-    var feedImageSection: Int {
+    var feedImagesSection: Int {
         .zero
     }
     
@@ -64,7 +70,7 @@ extension ListViewController {
             return nil
         }
         let ds = tableView.dataSource
-        let index = IndexPath(row: row, section: feedImageSection)
+        let index = IndexPath(row: row, section: feedImagesSection)
         return ds?.tableView(tableView, cellForRowAt: index)
     }
 }
