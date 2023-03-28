@@ -29,6 +29,8 @@
 		331E8C1929D392F100F00FA2 /* ImageCommentsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331E8C1829D392F100F00FA2 /* ImageCommentsEndpoint.swift */; };
 		331E8C1B29D3934C00F00FA2 /* FeedEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331E8C1A29D3934C00F00FA2 /* FeedEndpointTests.swift */; };
 		331E8C1D29D3938E00F00FA2 /* ImageCommentsEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331E8C1C29D3938E00F00FA2 /* ImageCommentsEndpointTests.swift */; };
+		331E8C1F29D3971600F00FA2 /* LoadMoreCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331E8C1E29D3971600F00FA2 /* LoadMoreCellController.swift */; };
+		331E8C2229D3973E00F00FA2 /* LoadMoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331E8C2129D3973E00F00FA2 /* LoadMoreCell.swift */; };
 		3324379A28EAA6BA001D67D2 /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3324379928EAA6BA001D67D2 /* LoadFeedImageDataFromCacheUseCaseTests.swift */; };
 		332E333D27E1B8F500405AE3 /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332E333C27E1B8F500405AE3 /* LocalFeedImage.swift */; };
 		332ED2B527DB1218001C457C /* CacheFeedUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332ED2B427DB1218001C457C /* CacheFeedUseCaseTests.swift */; };
@@ -190,6 +192,8 @@
 		331E8C1829D392F100F00FA2 /* ImageCommentsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsEndpoint.swift; sourceTree = "<group>"; };
 		331E8C1A29D3934C00F00FA2 /* FeedEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedEndpointTests.swift; sourceTree = "<group>"; };
 		331E8C1C29D3938E00F00FA2 /* ImageCommentsEndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentsEndpointTests.swift; sourceTree = "<group>"; };
+		331E8C1E29D3971600F00FA2 /* LoadMoreCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCellController.swift; sourceTree = "<group>"; };
+		331E8C2129D3973E00F00FA2 /* LoadMoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreCell.swift; sourceTree = "<group>"; };
 		3324379928EAA6BA001D67D2 /* LoadFeedImageDataFromCacheUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedImageDataFromCacheUseCaseTests.swift; sourceTree = "<group>"; };
 		332E333C27E1B8F500405AE3 /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
 		332ED2B427DB1218001C457C /* CacheFeedUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTests.swift; sourceTree = "<group>"; };
@@ -350,6 +354,14 @@
 				3318362C28093534008D5202 /* EssentialFeedCacheIntegrationTests.swift */,
 			);
 			path = EssentialFeedCacheIntegrationTests;
+			sourceTree = "<group>";
+		};
+		331E8C2029D3971A00F00FA2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				331E8C1E29D3971600F00FA2 /* LoadMoreCellController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		332ED2B327DB11EE001C457C /* Feed Cache */ = {
@@ -793,6 +805,7 @@
 			isa = PBXGroup;
 			children = (
 				33D42ECA29D2345900F62021 /* Views */,
+				331E8C2029D3971A00F00FA2 /* Controllers */,
 			);
 			path = "Feed UI";
 			sourceTree = "<group>";
@@ -801,6 +814,7 @@
 			isa = PBXGroup;
 			children = (
 				335FDD5B287550F400C6D57E /* Feed.storyboard */,
+				331E8C2129D3973E00F00FA2 /* LoadMoreCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1096,7 +1110,9 @@
 				337B6A4029146E5100EB8455 /* UITableView+HeaderSizing.swift in Sources */,
 				33AC30E028908A3A0074280C /* ErrorView.swift in Sources */,
 				33CCA4C52844819100587ADD /* UIView+Shimmering.swift in Sources */,
+				331E8C2229D3973E00F00FA2 /* LoadMoreCell.swift in Sources */,
 				33D42ECC29D238A800F62021 /* UIView+Container.swift in Sources */,
+				331E8C1F29D3971600F00FA2 /* LoadMoreCellController.swift in Sources */,
 				33D42EC829D22D8600F62021 /* CellController.swift in Sources */,
 				33A6B4E72876A4FF00AA2411 /* UITableView+Dequeueing.swift in Sources */,
 				33E13747289108A20057B6EE /* UIRefreshControl+Helpers.swift in Sources */,
