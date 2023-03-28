@@ -87,7 +87,7 @@ class CommentsUIIntegrationTests: FeedUIIntegrationTests {
         assertThat(sut, isRendering: [comment])
     }
 
-    override func test_loadFeedCompletion_dispatchesFromBackgroundToMainThread() {
+    func test_loadCommentsCompletion_dispatchesFromBackgroundToMainThread() {
         let (sut, loader) = makeSUT()
         sut.loadViewIfNeeded()
 
@@ -153,7 +153,7 @@ class CommentsUIIntegrationTests: FeedUIIntegrationTests {
 
     private class LoaderSpy {
         private var requests = [PassthroughSubject<[ImageComment], Error>]()
-
+        
         var loadCommentsCallCount: Int {
             return requests.count
         }
