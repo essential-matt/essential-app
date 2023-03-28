@@ -29,6 +29,8 @@
 		33AEA758299EEB36001827D7 /* CombineHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AEA757299EEB36001827D7 /* CombineHelpers.swift */; };
 		33B790A729D37D5F00868214 /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B790A629D37D5F00868214 /* HTTPClientStub.swift */; };
 		33B790A929D37DF600868214 /* InMemoryFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B790A829D37DF600868214 /* InMemoryFeedStore.swift */; };
+		33B790AB29D3812700868214 /* CommentsUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B790AA29D3812700868214 /* CommentsUIComposer.swift */; };
+		33B790AD29D3815800868214 /* CommentsUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B790AC29D3815800868214 /* CommentsUIIntegrationTests.swift */; };
 		33C8E0AC28F5315D00906DAA /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C8E0AA28F5315D00906DAA /* EssentialFeed.framework */; };
 		33C8E0AD28F5315D00906DAA /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33C8E0AA28F5315D00906DAA /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33C8E0AE28F5315D00906DAA /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C8E0AB28F5315D00906DAA /* EssentialFeediOS.framework */; };
@@ -87,6 +89,8 @@
 		33AEA757299EEB36001827D7 /* CombineHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineHelpers.swift; sourceTree = "<group>"; };
 		33B790A629D37D5F00868214 /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
 		33B790A829D37DF600868214 /* InMemoryFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryFeedStore.swift; sourceTree = "<group>"; };
+		33B790AA29D3812700868214 /* CommentsUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIComposer.swift; sourceTree = "<group>"; };
+		33B790AC29D3815800868214 /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
 		33C8E0AA28F5315D00906DAA /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C8E0AB28F5315D00906DAA /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33EDA13C28F52D070034F336 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				33EDA13F28F52D070034F336 /* AppDelegate.swift */,
+				33B790AA29D3812700868214 /* CommentsUIComposer.swift */,
 				33EDA14128F52D070034F336 /* SceneDelegate.swift */,
 				3323BB2C290BABE3002FBBC9 /* FeedUIComposer.swift */,
 				3323BB29290BABE2002FBBC9 /* LoadResourcePresentationAdapter.swift */,
@@ -191,6 +196,7 @@
 				3323BB25290BA70F002FBBC9 /* SceneDelegateTests.swift */,
 				3323BB45290BAC4E002FBBC9 /* FeedUIIntegrationTests.swift */,
 				334B87B329130A9A005B5E57 /* FeedAcceptanceTests.swift */,
+				33B790AC29D3815800868214 /* CommentsUIIntegrationTests.swift */,
 			);
 			path = EssentialAppTests;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 				3323BB2E290BABE3002FBBC9 /* WeakRefVirtualProxy.swift in Sources */,
 				33EDA14228F52D070034F336 /* SceneDelegate.swift in Sources */,
 				33AEA758299EEB36001827D7 /* CombineHelpers.swift in Sources */,
+				33B790AB29D3812700868214 /* CommentsUIComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +320,7 @@
 			files = (
 				3323BB3E290BAC15002FBBC9 /* FeedUIIntegrationTests+LoaderSpy.swift in Sources */,
 				3323BB41290BAC15002FBBC9 /* ListViewController+TestHelpers.swift in Sources */,
+				33B790AD29D3815800868214 /* CommentsUIIntegrationTests.swift in Sources */,
 				33B790A929D37DF600868214 /* InMemoryFeedStore.swift in Sources */,
 				3395800128FCB7A900B3BE07 /* SharedTestHelpers.swift in Sources */,
 				3323BB40290BAC15002FBBC9 /* UIImage+TestHelpers.swift in Sources */,
