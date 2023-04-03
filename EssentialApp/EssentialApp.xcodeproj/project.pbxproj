@@ -34,6 +34,7 @@
 		33C8E0AD28F5315D00906DAA /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33C8E0AA28F5315D00906DAA /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		33C8E0AE28F5315D00906DAA /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C8E0AB28F5315D00906DAA /* EssentialFeediOS.framework */; };
 		33C8E0AF28F5315D00906DAA /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 33C8E0AB28F5315D00906DAA /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		33CBD7EA29DB68C300F0AE87 /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CBD7E929DB68C300F0AE87 /* NullStore.swift */; };
 		33EDA14028F52D070034F336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EDA13F28F52D070034F336 /* AppDelegate.swift */; };
 		33EDA14228F52D070034F336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EDA14128F52D070034F336 /* SceneDelegate.swift */; };
 		33EDA14928F52D090034F336 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33EDA14828F52D090034F336 /* Assets.xcassets */; };
@@ -91,6 +92,7 @@
 		33B790AC29D3815800868214 /* CommentsUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsUIIntegrationTests.swift; sourceTree = "<group>"; };
 		33C8E0AA28F5315D00906DAA /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C8E0AB28F5315D00906DAA /* EssentialFeediOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeediOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33CBD7E929DB68C300F0AE87 /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
 		33EDA13C28F52D070034F336 /* EssentialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EssentialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33EDA13F28F52D070034F336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33EDA14128F52D070034F336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				3323BB2A290BABE2002FBBC9 /* FeedViewAdapter.swift */,
 				3323BB28290BABE2002FBBC9 /* WeakRefVirtualProxy.swift */,
 				33AEA757299EEB36001827D7 /* CombineHelpers.swift */,
+				33CBD7E929DB68C300F0AE87 /* NullStore.swift */,
 				33EDA14828F52D090034F336 /* Assets.xcassets */,
 				33EDA14A28F52D090034F336 /* LaunchScreen.storyboard */,
 				33EDA14D28F52D090034F336 /* Info.plist */,
@@ -303,6 +306,7 @@
 				33EDA14028F52D070034F336 /* AppDelegate.swift in Sources */,
 				3323BB30290BABE3002FBBC9 /* FeedViewAdapter.swift in Sources */,
 				3323BB32290BABE3002FBBC9 /* FeedUIComposer.swift in Sources */,
+				33CBD7EA29DB68C300F0AE87 /* NullStore.swift in Sources */,
 				3323BB2F290BABE3002FBBC9 /* LoadResourcePresentationAdapter.swift in Sources */,
 				3323BB2E290BABE3002FBBC9 /* WeakRefVirtualProxy.swift in Sources */,
 				33EDA14228F52D070034F336 /* SceneDelegate.swift in Sources */,
